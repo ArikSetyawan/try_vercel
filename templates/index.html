@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HelloWorld</title>
+</head>
+<body>
+	<h1>HelloWorld from Flask deployed on Vercel</h1><br><br>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>
+					id
+				</th>
+				<th>
+					Todo
+				</th>
+				<th>
+					Description
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for i in data %}
+			<tr>
+				<td>{{i.id}}</td>
+				<td>{{i.todo}}</td>
+				<td>{{i.description}}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+</body>
+</html>
